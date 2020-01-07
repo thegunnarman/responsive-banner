@@ -1,55 +1,50 @@
 html {
-  font-family: "Noto Sans", sans-serif;
+  font-family: Georgia, serif;
+  color: #fff;
 }
 
-i {
-  font-family: "Noto Sans Japanese", sans-serif;
+.btn {
+  color: #fff;
+  border-color: #97a49b;
 }
 
-.nav a {
-  display: block;
-  text-decoration: none;
-  color: #005e76;
-  border-bottom: 2px solid #8bc9d9;
+.btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+  color: #495562;
 }
 
-.nav a:hover {
-  color: #000;
+header {
+  background-color: #495562;
 }
 
-.slogan {
-  border-top: 2px solid #e2e2e2;
-  border-bottom: 2px solid #e2e2e2;
-}
+@media only screen and (min-width: 38em) {
 
-.btn-ghost {
-  color: #005e76;
-  border-color: #8bc9d9;
-  border-width: 2px;
-}
+  .banner {
+    max-height: 500px;
+  }
 
-.btn-ghost:hover {
-  color: #000;
-  background-color: #0084a6;
-  border-color: #005e76;
-}
+  .btn {
+    float: right;
+  }
 
-.border {
-  border-top: 2px solid #e2e2e2;
-}
-
-footer {
-  color: #666;
 }
 
 @media only screen and (min-width: 60em) {
 
-  .masthead {
-    text-align: left;
+  html {
+    color: #efefef;
   }
 
-  .head-right {
-    text-align: right;
+  header {
+    position: relative;
+  }
+
+  .banner-content {
+    background-image: linear-gradient(to bottom, rgba(73, 85, 98, 0), rgba(73, 85, 98, .9));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 
 }
